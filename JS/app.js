@@ -117,19 +117,19 @@ function createCard(gif, container, className, overlayClass = "hover-card") {
   favButton.onmouseover = (event) =>
     (favButton.src = "/ICONS/icon-fav-hover.svg");
 
-  favButton.onmouseleave = (event) => (favButton.src = "/ICONS/icon-fav.svg");
+  favButton.onmouseleave = (event) => (favButton.src = "../ICONS/icon-fav.svg");
 
   downloadButton.onmouseover = (event) =>
-    (downloadButton.src = "/ICONS/icon-download-hover.svg");
+    (downloadButton.src = "../ICONS/icon-download-hover.svg");
 
   downloadButton.onmouseleave = (event) =>
-    (downloadButton.src = "/ICONS/icon-download.svg");
+    (downloadButton.src = "../ICONS/icon-download.svg");
 
   maxButton.onmouseover = (event) =>
-    (maxButton.src = "/ICONS/icon-max-hover.svg");
+    (maxButton.src = "../ICONS/icon-max-hover.svg");
 
   maxButton.onmouseleave = (event) =>
-    (maxButton.src = "/ICONS/icon-max-normal.svg");
+    (maxButton.src = "../ICONS/icon-max-normal.svg");
 }
 
 // TRENDING RESULTS
@@ -151,17 +151,17 @@ const leftButton = document.querySelector("#left-button");
 const rightButton = document.querySelector("#right-button");
 
 leftButton.addEventListener("mouseover", () => {
-  leftButton.src = "/ICONS/button-slider-left-hover.svg";
+  leftButton.src = "../ICONS/button-slider-left-hover.svg";
 });
 leftButton.addEventListener("mouseleave", () => {
-  leftButton.src = "/ICONS/button-slider-left.svg";
+  leftButton.src = "../ICONS/button-slider-left.svg";
 });
 
 rightButton.addEventListener("mouseover", () => {
-  rightButton.src = "/ICONS/button-slider-right-hover.svg";
+  rightButton.src = "../ICONS/button-slider-right-hover.svg";
 });
 rightButton.addEventListener("mouseleave", () => {
-  rightButton.src = "/ICONS/button-slider-right.svg";
+  rightButton.src = "../ICONS/button-slider-right.svg";
 });
 
 const sliderContainer = document.querySelector(".slider");
