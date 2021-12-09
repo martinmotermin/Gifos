@@ -1,0 +1,143 @@
+.cf-container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .recorder-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 292px;
+        #icon-recorder{
+            width: 123px;
+            height: 162px;
+        }
+        #recorder-light{
+            img{
+                width: 91px;
+                height: 162px;
+            }
+
+        }
+    }
+    #icon-tape{
+        width: 142px;
+        height: 89px;
+        align-self: flex-end;
+        margin-bottom: 100px;
+    }
+    .screen-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .screen{
+            width: 688px;
+            height: 390px;
+            border: 1px solid $purplecolor;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            .corner{
+                width: 27px;
+                height: 25px;
+                margin: 20px
+            }
+            .left-corners{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .corner-1{
+                    border-top: 1px solid $greencolor;
+                    border-left: 1px solid $greencolor;
+                }
+                .corner-2{
+                    border-bottom: 1px solid $greencolor;
+                    border-left: 1px solid $greencolor;
+                }
+            }
+            .right-corners {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .corner-3{
+                    border-top: 1px solid #50E3C2;
+                    border-right: 1px solid #50E3C2;
+                }
+                .corner-4{
+                    border-bottom: 1px solid $greencolor;
+                    border-right: 1px solid $greencolor;
+                }
+            }
+            .screen-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .screen-title{
+                    font-family: $mainfont;
+                    font-weight: bolder;
+                    font-size: 25px;
+                    color: $purplecolor;
+                    line-height: 35px;
+                    text-align: center;
+                    margin-bottom: 3px;
+                    span{
+                        color: $greencolor;
+                    }
+                }
+                .screen-subtitle{
+                    font-family: $secondaryfont;
+                    font-size: 16px;
+                    color: #000000;
+                    text-align: center;
+                    line-height: 29px;
+                }
+            }
+        }
+        .slider{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .slider-steps{
+                margin: auto;
+                width: 150px;
+                height: 121px;
+                display: flex;
+                justify-content: space-between;
+                .step{
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 50%;
+                    border: 1px solid $purplecolor;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: $secondaryfont;
+                    font-size: 18px;
+                    color: $purplecolor;
+                }
+            }
+            .slider-division{
+                margin: auto;
+                width: 795.9px;
+                height: 6.9px;
+                background: $purplecolor;
+                border-radius: 5px ;
+            }
+            #cf-button{
+                margin: 20px auto 26px auto;
+                width: 127px;
+                height: 50px;
+                border-radius: 25px;
+                border: 1px solid $purplecolor;
+                font-family: $secondaryfont;
+                color: $purplecolor;
+                font-size: 13px;
+                letter-spacing: 0;
+                text-align: center;
+            }
+        }
+    }
+}

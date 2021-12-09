@@ -1,0 +1,122 @@
+.fav-tittle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 46px;
+  img {
+    width: 28px;
+    height: 21px;
+  }
+  p {
+    font-family: $mainfont;
+    font-weight: bolder;
+    color: $purplecolor;
+    font-size: clamp(20px, 5vw, 25px);
+    line-height: 30px;
+    margin-top: 7px;
+  }
+}
+.fav-gifs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .fav-nocontent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 150px;
+      height: 151px;
+    }
+    .fav-nocontent-title {
+      width: 290px;
+      text-align: center;
+      font-family: $mainfont;
+      font-weight: bolder;
+      color: $greencolor;
+      line-height: 33px;
+      font-size: clamp(19px, 5vw, 22px);
+    }
+  }
+  #fav-content {
+    margin: auto;
+    .fav-gif {
+      position: relative;
+      margin: 32px 22px 82px 22px;
+      user-select: none;
+      img {
+        width: 243px;
+        height: 187px;
+        object-fit: cover;
+      }
+      .hover-card {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        width: 243px;
+        height: 187px;
+        top: 0;
+        left: 0;
+        background: rgba(87, 46, 229, 0.6);
+        transition: 0.2s ease;
+        .card-text {
+          font-family: $secondaryfont;
+          color: #ffffff;
+          margin-bottom: 25px;
+          margin-left: 10px;
+          h2 {
+            font-size: 16px;
+            font-weight: bolder;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .card-buttons {
+          width: 116px;
+          display: flex;
+          justify-content: space-around;
+          align-self: flex-end;
+          margin-top: 10px;
+          margin-right: 10px;
+          img {
+            width: 32px;
+            height: 32px;
+          }
+          img:hover {
+            cursor: pointer;
+          }
+          .added-to-favorites {
+            content: url("/ICONS/icon-fav-active.svg");
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .fav-gifs {
+    .fav-nocontent {
+      margin-top: 110px;
+      .fav-nocontent-title {
+        width: 431px;
+        margin-top: 24px;
+      }
+    }
+    #fav-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}

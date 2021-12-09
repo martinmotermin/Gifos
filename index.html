@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifos</title>
+    <script src="https://kit.fontawesome.com/c6f6714b9b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="/index.html"><img src="/ICONS/logo-mobile.svg" alt="logogifos" id="logo"></a>
+            <div class="icon-container"><span class="nav-icon"></span></div>
+            <ul class="menu">
+                <li><a class="menu-link" id="darkmode-btn" href="#">Modo Nocturno</a><span></span></li>
+                <li><a class="menu-link" href="/HTML/favoritos.html">Favoritos</a><span></span></span></li>
+                <li><a class="menu-link" href="/HTML/misgifos.html">Mis Gifos</a><span></span></li>
+                <div class="creargifo"><a href="/HTML/creargifo.html"><img src="./ICONS/button-crear-gifo.svg" alt="creategifo" ></a></div>
+            </ul>
+        </div>    
+    </nav>
+    <div class="search-section">
+        <div class="tittle">
+            <h1>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h1>
+        </div>
+        <img src="./ICONS/ilustra_header.svg" alt="mainlogo" id="main-logo">
+        <div class="input">
+            <div class="user-input">
+                <input type="search" name="" id="search-input" placeholder="Buscá GIFOS y más"><img src="./ICONS/icon-search.svg" alt="lupa" class="lupa" id="input-lupa">
+             </div>
+             <ul id="search-suggestions"></ul>
+        </div>
+        <div class="trending-uptittle">
+            <h2>Trending:</h2>
+            <p>Reactions, Entertainment, Sports, Stickers, Artists</p>
+        </div>
+        <div id="search-tittle"></div>
+        <div id="search-results"></div>
+    </div>
+    <div class="trending-section">
+        <div class="trending-tittle">
+            <h2>Trending GIFOS</h2>
+            <p>Mira los últimos<br> GIFOS de nuestra comunidad.</p>
+        </div>
+        <div class="slider-content">
+            <img class="slider-button" id='left-button' src="./ICONS/button-slider-left.svg" alt="leftslider">
+            <div class="slider" id="trending-results"></div>
+            <img class="slider-button" id='right-button' src="./ICONS/Button-Slider-right.svg" alt="rightslider">
+        </div>
+    </div>
+    <footer>
+        <div class="social-content">
+            <div class="social-text">Compartir en:</div>
+            <div class="social-icons"><a href="https://www.facebook.com/GIPHY" target="_blank"><img src="./ICONS/icon_facebook.svg" alt="fb-icon" class="social-icon fb-icon" id="fb-icon"></a><a href="https://twitter.com/GIPHY" target="_blank"><img src="./ICONS/icon-twitter.svg" alt="tw-icon" class="social-icon tw-icon" id="tw-icon"></a><a href="https://www.instagram.com/giphy/" target="_blank"><img src="ICONS/icon_instagram.svg" alt="ig-icon" class="social-icon ig-icon" id="ig-icon"></a></div>
+        </div>
+        <div class="rights"><p>© GIFOS 2020 All Rights Reserved.</p></div>
+    </footer>
+    <script src="/JS/app.js"></script>
+    <script src="/JS/search.js"></script>
+    <script src='/JS/darkmode.js'> </script>
+</body>
+</html>

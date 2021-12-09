@@ -1,0 +1,123 @@
+.dark-mode{
+     background: #37383C;
+    .navbar {
+        border-top: solid 5px  #000000;
+        ul{
+            background: #000000;
+        }
+        .nav-icon{
+            background: #ffffff;
+        }
+        .nav-icon::before{
+            background: #ffffff;
+        }
+        .nav-icon::after{
+            background: #ffffff;
+        }
+    }
+    .search-section {
+        .tittle{
+            h1{
+                color: #ffffff;
+            }
+        }
+        .input{
+            border: 1px solid #ffffff;
+            .user-input{
+                input{
+                    color: #ffffff;
+                    background: #37383C;
+                }
+
+            }
+            #search-suggestions {
+                li{
+                    color: #ffffff;
+                }
+            }
+        }
+        .trending-uptittle{
+            h2{
+                color: #ffffff;
+            }
+            p{
+                color: #ffffff;
+            }
+        }
+    }
+    .trending-section{
+        background: #222326;
+        .trending-tittle{
+            h2{
+                color: #ffffff;
+            }
+            p{
+                color: #ffffff;
+            }
+        }
+    }
+    footer{
+        border-bottom: solid 5px #000000;
+        .social-content{
+            .social-text{
+                color: #ffffff;
+            }
+        }
+        .rights{
+            color: #ffffff;
+        }
+    }
+    // favorites
+    .fav-tittle{
+        p{
+            color: #ffffff;
+        }
+    }
+    // my gifos
+    .mg-tittle{
+        p{
+            color: #ffffff;
+        }
+    }
+    // create gifos
+    .cf-container{
+        .screen-container{
+            .screen-content{
+                .screen-title{
+                    color: #ffffff;
+                }
+                .screen-subtitle{
+                    color: #ffffff;
+                }
+            }
+            .slider{
+                .slider-steps{
+                    .step{
+                        color: #ffffff;
+                        border-radius: 50%;
+                        border: 1px solid #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+.dark-mode{
+    .navbar{
+        .navbar-content{
+            .menu{
+                li{
+                    a{
+                        color: #ffffff;
+                    }
+                    span{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+}

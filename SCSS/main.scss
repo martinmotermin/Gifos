@@ -1,0 +1,32 @@
+// RESET
+@import "./base/reset";
+
+// UTILS
+@import "./utils/colors";
+@import "./utils/fonts";
+
+//------ LAYOUT
+
+// NAVBAR
+@import "./layout/navbar";
+
+// SEARCH SECTION
+@import "./layout/search";
+
+// TRENDING SECTION
+@import "./layout/trending";
+
+// FOOTER SECTION
+@import "./layout/footer";
+
+// FAV PAGE
+@import "./layout/favoritos";
+
+// MIS GIFOS PAGE
+@import "./layout/misgifos";
+
+// CREAR GIFO
+@import "./layout/creargifo";
+
+// DARK MODE
+@import "./layout/darkmode";
