@@ -115,7 +115,7 @@ function createCard(gif, container, className, overlayClass = "hover-card") {
 
   // CARD BUTTON HOVER EVENTS
   favButton.onmouseover = (event) =>
-    (favButton.src = "/ICONS/icon-fav-hover.svg");
+    (favButton.src = "../ICONS/icon-fav-hover.svg");
 
   favButton.onmouseleave = (event) => (favButton.src = "../ICONS/icon-fav.svg");
 
